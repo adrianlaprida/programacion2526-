@@ -1,14 +1,24 @@
 import java.util.Scanner;
 
 public class Ejercicio14 {
-    static void main(String[] args){
+    static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
-        System.out.println("Cuantos numeros va a introducir");
-        int numeros = tec.nextInt();
+        int contador;
 
-        int resultado = 0;
+        do {
+            System.out.println("Cuantos numeros vas a introducir");
+            contador = tec.nextInt();
+            if (contador < 0) {
+                System.out.println("Numero incorrecto, dame otro que sea positivo");
+            }
+        }while (contador<=0);
 
-        for (int i = 0; i<0; i++);
-
+        double suma = 0;
+        for (int i = 1; i <=contador; i++){
+            System.out.println("Introduce el numero " + i + " :");
+            suma = suma + tec.nextInt();
+        }
+        double media = suma/contador;
+        System.out.println("La media de tus numeros es " + media);
     }
 }
