@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+//Realizar un programa que lea un número entero entre 0 y 10 y visualice su
+//tabla de multiplicar.
+
 public class Ejercicio9 {
     public static void main(String[] args){
         Scanner teclado = new Scanner(System.in);

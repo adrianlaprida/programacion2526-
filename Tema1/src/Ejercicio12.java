@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+//Realizar un programa que solicite números hasta que se introduzca un
+//número negativo. Cuando termine informará de cuantos números positivos
+//se han introducido. En este programa el número 0 se considera positivo.
+
 public class Ejercicio12 {
     static void main(String[] args){
         Scanner tec = new Scanner(System.in);

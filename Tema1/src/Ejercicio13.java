@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+//Realizar un programa que lea dos números enteros cualesquiera numeroA
+//y numeroB, y calcule el producto los números mediante sumas, es decir,
+//sin usar el operador *.
+
 public class Ejercicio13 {
     static void main(String[] args){
         Scanner tec = new Scanner(System.in);

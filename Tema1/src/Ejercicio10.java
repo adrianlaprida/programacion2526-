@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+//Realizar un programa que solicite una cantidad de números que van a
+//introducirse por teclado. Después, para cada uno de ellos que indique si el
+//número es par o impar. Si la cantidad de números introducida es 0 o
+//negativa volverá a solicitarse el dato.
+
 public class Ejercicio10 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
