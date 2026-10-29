@@ -61,11 +61,13 @@ public class MiEntradaSalida {
         char contianuarSINO;
         do {
             contianuarSINO = tec.nextLine().toUpperCase().charAt(0);
-            if (contianuarSINO != 's' || contianuarSINO != 'n'){
-                System.out.println("La letra no es valida , las opciones posibles son para si(s) o no(n)");
-            }
-        }while (contianuarSINO == 's');
-        return contianuarSINO
+                do {
+                    if (contianuarSINO != 'S' && contianuarSINO != 'N'){
+                        System.out.println("La letra no es valida , las opciones posibles son para si(s) o no(n)");
+                }
+            }while (contianuarSINO != 'S'  && contianuarSINO !='N');
+        }while (contianuarSINO == 'S'  || contianuarSINO =='N');
+        return contianuarSINO;
     }
 
 
@@ -91,6 +93,10 @@ public class MiEntradaSalida {
 
         /*char caracter = leerChar("Dime un caracter");
         System.out.println("El caracter introducido es " + caracter);*/
+
+
+        char letra = continuarSINO("¿Quieres continuar?");
+        System.out.println("La letra que has escogido es " + letra);
 
 
 
