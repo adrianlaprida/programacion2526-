@@ -1,4 +1,5 @@
-import java.util.Locale;
+package Relacion1;
+
 import java.util.Scanner;
 
 public class MiEntradaSalida {
