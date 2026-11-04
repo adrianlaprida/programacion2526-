@@ -22,7 +22,7 @@ public class Ejercicio3Relacion1 {
 
 
     static void main(String[] args) {
-        int tamano = MiEntradaSalida.enteroPositivo("Cuantos numeros vas a introducir:");
+        int tamano = MiEntradaSalida.enteroPositivo("Cuantos numeros vas a introducir");
         int[] array = new int[tamano];
         numeroDeEnteros(array);
 
@@ -33,9 +33,28 @@ public class Ejercicio3Relacion1 {
         }
         int maximo = Integer.MIN_VALUE;
         int contadorMaximo = 0;
-        for (int j = 0; j < array.length; j++) {
+        int minimo = Integer.MAX_VALUE;
+        int contadorMinimo = 0;
+        int suma = 0;
 
+        for (int i = 0; i < array.length; i++) {
+            suma +=array[i];
+            if (array[i] > maximo){
+                maximo = array[i];
+                contadorMaximo = 1;
+            }else if (array[i] == maximo){
+                contadorMaximo++;
+            }
+            if (array[i] < minimo){
+                minimo = array[i];
+                contadorMinimo = 1;
+            } else if (array[i] == minimo) {
+                contadorMinimo++;
+            }
         }
+        System.out.println("El menor numero introducido es " + minimo + " (se repite " + contadorMinimo + " veces)");
+        System.out.println("El mayor numero introducido es " + maximo + " (se repite " + contadorMaximo + " veces)");
+        System.out.println("La media de los numeros es: " + (suma / array.length));
     }
 
 }
