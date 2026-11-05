@@ -35,19 +35,45 @@ public class Ejercicio4Relacion1 {
     //Creo la constante fuera del main
     static final int TOTAL_NUMEROS = 6000;
 
-        static void main(String[] args) {
+    static void main(String[] args) {
 
-            int suma = 0;
+        int suma = 0;
 
-            Random r = new Random();
+        Random r = new Random();
 
-            int[] terminaciones = new int[10];
+        int[] terminaciones = new int[10];
 
-            for (int i = 0; i < TOTAL_NUMEROS; i++) {
-                int numeroAleatorio = r.nextInt(100);
-                suma += numeroAleatorio;
-                terminaciones[numeroAleatorio%10]++;
-            }
-
+        for (int i = 0; i < TOTAL_NUMEROS; i++) {
+            int numeroAleatorio = r.nextInt(100);
+            suma += numeroAleatorio;
+            terminaciones[numeroAleatorio % 10]++;
         }
+        System.out.println("La media de los numeros es " + (double) suma / TOTAL_NUMEROS);
+
+        int max = -1;
+        int posicionmax = 0;
+        int min = 1000000;
+        int posicionmin = 0;
+        for (int i = 0; i < terminaciones.length; i++) {
+            if (terminaciones[i] > max) {
+                max = terminaciones[i];
+                posicionmax = i;
+            }
+        }
+        for (int i = 0; i < terminaciones.length; i++) {
+            if (terminaciones[i] < min) {
+                min = terminaciones[i];
+                posicionmin = i;
+            }
+        }
+
+        for (int i = 0; i < terminaciones.length; i++) {
+            System.out.println("Se repitio: " + max + " veces" + " esto equivale a " + terminaciones[i] * (double)100 / TOTAL_NUMEROS + "% de las veces");
+        }
+        System.out.println("El digito que mas se repitio es: " + posicionmax);
+        System.out.println("El digito que menos se repitio es: " + posicionmin);
+
+
+
+    }
 }
