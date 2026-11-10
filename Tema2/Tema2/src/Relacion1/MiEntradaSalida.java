@@ -51,23 +51,21 @@ public class MiEntradaSalida {
         return numeroIntroducido;
     }
 
-    public static char leerChar(String mensaje){
+    public static char leerChar(String mensaje) {
         System.out.println(mensaje + ":");
         char letraIntroducida = tec.nextLine().charAt(0);
         return letraIntroducida;
     }
 
-    public static char continuarSINO(String mensaje){
+    public static char continuarSINO(String mensaje) {
         System.out.println(mensaje);
         char contianuarSINO;
         do {
             contianuarSINO = tec.nextLine().toUpperCase().charAt(0);
-                do {
-                    if (contianuarSINO != 'S' && contianuarSINO != 'N'){
-                        System.out.println("La letra no es valida , las opciones posibles son para si(s) o no(n)");
-                }
-            }while (contianuarSINO != 'S'  && contianuarSINO !='N');
-        }while (contianuarSINO == 'S'  || contianuarSINO =='N');
+            if (contianuarSINO != 'S' && contianuarSINO != 'N') {
+                System.out.println("La letra no es valida , las opciones posibles son para si(s) o no(n)");
+            }
+        } while (contianuarSINO != 'S' && contianuarSINO != 'N');
         return contianuarSINO;
     }
 
@@ -98,7 +96,6 @@ public class MiEntradaSalida {
 
         char letra = continuarSINO("¿Quieres continuar?");
         System.out.println("La letra que has escogido es " + letra);
-
 
 
     }
