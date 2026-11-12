@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d92807aa-5f1c-4361-aeb5-76cff0736532" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Relacion1/Ejercicio12Relacion1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relacion1/Ejercicio12Relacion1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Relacion1/Ejercicio13Relacion1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relacion1/Ejercicio13Relacion1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Relacion1/Ejercicio9Relacion1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relacion1/Ejercicio9Relacion1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   "keyToString": {
     "Application.Ejercicio10Relacion1.executor": "Run",
     "Application.Ejercicio12Relacion1.executor": "Run",
+    "Application.Ejercicio13Relacion1.executor": "Run",
     "Application.Ejercicio1Relacion1.executor": "Run",
     "Application.Ejercicio1Relacion2.executor": "Run",
     "Application.Ejercicio3Relacion1.executor": "Run",
@@ -85,6 +87,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

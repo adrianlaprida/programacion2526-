@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class Ejercicio9Relacion1 {
     static void main(String[] args) {
-        int[] array1 = {1,6,4,3,2,5}; sw
+        int[] array1 = {1,6,4,3,2,5};
         boolean reverse = false;
         char sn = MiEntradaSalida.continuarSINO("Quieres ordenarlo al reves (S/N) ");
 
