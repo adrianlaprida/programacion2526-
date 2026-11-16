@@ -20,6 +20,7 @@ package Relacion1;
 //“No hay elementos en la cola”
 //-----
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /// / Imagina ahora el siguiente estado
@@ -30,9 +31,13 @@ import java.util.Scanner;
 
 public class Ejercicio14Relacion1 {
     static Scanner tec = new Scanner(System.in);
+    static int contador = 0;
+    static int primero = 0;
+
 
     static void main(String[] args) {
         int eleccion;
+        int[] array = new int[10];
 
         do {
             System.out.println("1.Encolar");
@@ -42,18 +47,42 @@ public class Ejercicio14Relacion1 {
 
             switch (eleccion) {
                 case 1:
-                    int numeroElegido = MiEntradaSalida.leerEntero("¿Que numero quieres meter en la cola?")
-                    encolarNumero();
+                    int numeroElegido = MiEntradaSalida.leerEntero("¿Que numero quieres meter en la cola?");
+                    encolarNumero(array,numeroElegido );
+                    System.out.println(Arrays.toString(Arrays.copyOf(array, contador)));
+                    break;
+                case 2:
+                    desencolarNumero(array);
+                    System.out.println(Arrays.toString(array));
+                    break;
+                case 3:
+                    System.out.println("Saliendo");
+                    break;
+                default:
+                    System.out.println("Invalido");
             }
 
         } while (eleccion != 0);
     }
 
-    public static void encolarNumero() {
-
+    public static void encolarNumero(int[] array, int a) {
+        if (contador == 10){
+            System.out.println("La cola esta llena");
+        }else {
+            int posicion = (primero+contador) % array.length;
+            array[posicion] = a;
+            contador++;
+        }
     }
 
-    public static void desencolarNumero() {
-
+    public static void desencolarNumero(int[] array) {
+        if (contador == 0){
+            System.out.println("El array esta vacio");
+        }else {
+            System.out.println("Se ha quitado el numero " + array[primero]);
+            array[primero]= 0;
+            primero = (primero + 1) % array.length;
+            contador--;
+        }
     }
 }
