@@ -10,4 +10,19 @@ import java.util.Scanner;
 public class Ejercicio5 {
     static Scanner tec = new Scanner(System.in);
 
+    static void main(String[] args) {
+        int matriz [] [] = {{1,2,6}, {4,5,6}};
+        int[][] solucion = leerMatrizPorColumnas(matriz);
+    }
+
+    public static int [][] leerMatrizPorColumnas(int[] [] matriz){
+
+        for (int j = 0; j <matriz[0].length ; j++) {
+            for (int i = 0; i < matriz.length; i++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+        }
+        return matriz;
+    }
+
 }

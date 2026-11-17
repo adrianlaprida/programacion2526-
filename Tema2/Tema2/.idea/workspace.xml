@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d92807aa-5f1c-4361-aeb5-76cff0736532" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Relacion1/Ejercicio14Relacion1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relacion1/Ejercicio14Relacion1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelacionMatrices/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelacionMatrices/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelacionMatrices/Ejercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelacionMatrices/Ejercicio5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,10 @@
     "Application.Ejercicio1Relacion2.executor": "Run",
     "Application.Ejercicio3.executor": "Run",
     "Application.Ejercicio3Relacion1.executor": "Run",
+    "Application.Ejercicio4.executor": "Run",
     "Application.Ejercicio4Relacion1.executor": "Run",
+    "Application.Ejercicio5.executor": "Run",
+    "Application.Ejercicio6.executor": "Run",
     "Application.Ejercicio9Relacion1.executor": "Run",
     "Application.MiEntradaSalida.executor": "Run",
     "Application.PrimerEjercicioArray.executor": "Run",
