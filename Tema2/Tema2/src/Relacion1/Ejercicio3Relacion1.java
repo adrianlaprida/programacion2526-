@@ -16,7 +16,7 @@ package Relacion1;
 //El menor número introducido es -1
 //La media de los números introducidos es: 5.2
 
-import java.util.Scanner;
+import RelacionMatrices.MiEntradaSalida;
 
 public class Ejercicio3Relacion1 {
 

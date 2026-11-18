@@ -20,6 +20,8 @@ package Relacion1;
 //“No hay elementos en la cola”
 //-----
 
+import RelacionMatrices.MiEntradaSalida;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

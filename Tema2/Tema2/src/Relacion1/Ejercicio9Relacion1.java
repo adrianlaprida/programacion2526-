@@ -3,7 +3,8 @@ package Relacion1;
 //Modifica el método anterior y acepta un parámetro “reverse”, que indique si el array
 //debe devolverse ordenado de menor a mayor o al revés.
 
-import java.lang.reflect.Array;
+import RelacionMatrices.MiEntradaSalida;
+
 import java.util.Arrays;
 
 public class Ejercicio9Relacion1 {

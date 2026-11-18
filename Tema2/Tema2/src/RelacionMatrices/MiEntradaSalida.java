@@ -1,4 +1,4 @@
-package Relacion1;
+package RelacionMatrices;
 
 import java.util.Scanner;
 
